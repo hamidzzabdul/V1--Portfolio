@@ -1,0 +1,117 @@
+.project {
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  gap: 0.5rem;
+  position: relative;
+}
+
+.title > h1 > span {
+  color: var(--secondary-color);
+}
+
+.title > h1 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.line {
+  width: 70px;
+  height: 2px;
+  background-color: var(--secondary-color);
+  position: absolute;
+  top: 115%;
+  left: 36%;
+}
+
+.project-containers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 4rem auto;
+  gap: 1.5rem;
+}
+
+.project-wrapper {
+  background-color: #112240;
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: transform 300ms ease;
+}
+
+.project-wrapper:hover {
+  transform: translateY(-10px);
+}
+
+.icons > img {
+  width: 70px;
+  object-fit: cover;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icons > div {
+  display: flex;
+  gap: 1rem;
+}
+
+.icons > div > img {
+  width: 30px;
+  object-fit: cover;
+  cursor: pointer;
+}
+svg:hover path {
+  fill: var(--secondary-color);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 20px;
+}
+
+.description > .subtitle {
+  letter-spacing: 1px;
+}
+
+.description > p {
+  font-size: 0.775rem;
+  line-height: 1.8rem;
+}
+
+.languages {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 1040px) {
+  .project-containers {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-containers {
+    grid-template-columns: 1fr;
+  }
+}

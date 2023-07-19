@@ -1,13 +1,38 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Poppins:wght@300;400;500;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --body-primary: #0a192f;
+  --secondary-color: #50ffd5;
+  --font-color: #aab6d8;
+
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Lexend", sans-serif;
+}
+
+body {
+  background: var(--body-primary);
+  color: var(--font-color);
+  font-family: var(--secondary-font);
+  position: relative;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+main::-webkit-scrollbar {
+  display: none;
 }

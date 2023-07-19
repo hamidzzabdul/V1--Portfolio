@@ -1,0 +1,32 @@
+.sidemenu {
+  width: 100px;
+  height: 200px;
+  position: absolute;
+  top: 35%;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 30px;
+
+  gap: 1rem;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+}
+.sidemenu > svg {
+  margin: 10px 20px;
+  width: 20px;
+
+  cursor: pointer;
+}
+
+.sidemenu > svg:hover {
+  stroke: var(--secondary-color);
+}
+.line {
+  width: 2px;
+  height: inherit;
+  position: absolute;
+  left: 0;
+  background-color: var(--secondary-color);
+}

@@ -1,0 +1,24 @@
+<svg
+        width="124"
+        height="105"
+        viewBox="0 0 124 105"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M32.4308 74L74 2L115.569 74H32.4308Z"
+          fill="#0A192F"
+          stroke="#50FFD5"
+          stroke-width="2"
+        />
+        <path
+          d="M8.43078 79L50 7L91.5692 79H8.43078Z"
+          fill="#0A192F"
+          stroke="#50FFD5"
+          stroke-width="2"
+        />
+        <path
+          d="M41.8906 64H38.8438L47.6563 40H50.6563L59.4688 64H56.4219L49.25 43.7969H49.0625L41.8906 64ZM43.0156 54.625H55.2969V57.2031H43.0156V54.625Z"
+          fill="#50FFD5"
+        />
+      </svg>
