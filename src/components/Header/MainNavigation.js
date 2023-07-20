@@ -43,14 +43,16 @@ const MainNavigation = ({ onNavItemClick }) => {
   return (
     <div className={classes.nav}>
       <SideBar className={isActive ? "active" : ""} onClose={toggleSideBar} />
-      <motion.img
-        src={Logo}
-        alt="logo.png"
-        className={classes.logo}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ ease: "easeIn", duration: 0.5, delay: 0.2 }}
-      />
+      <a href="/">
+        <motion.img
+          src={Logo}
+          alt="logo.png"
+          className={classes.logo}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ ease: "easeIn", duration: 0.5, delay: 0.2 }}
+        />
+      </a>
       <ul className={classes["nav-items"]}>
         <AnimatedListItem delay={0.2} className={classes.list}>
           <span>01.</span>

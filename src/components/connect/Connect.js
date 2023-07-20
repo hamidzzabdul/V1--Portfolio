@@ -10,7 +10,6 @@ const AnimateConnect = ({ children, inView }) => {
   const animation = useAnimation();
   useEffect(() => {
     if (inView) {
-      console.log("inView=", inView);
       animation.start({
         y: 0,
         opacity: 1,
@@ -40,6 +39,19 @@ const Connect = () => {
     triggerOnce: true,
   });
 
+  const handleContactMe = () => {
+    const email = "abdirahimabdul89@gmail.com";
+    const subject = "";
+    const body = "";
+
+    const mailToLink = `mailto:${email}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    // Open the default email client with the pre-populated email
+    window.location.href = mailToLink;
+  };
+
   return (
     <AnimateConnect inView={inView}>
       <div className={classes["lets-connect"]} ref={ref}>
@@ -52,7 +64,11 @@ const Connect = () => {
             feel free to reach out to me.
           </p>
         </div>
-        <Button type="button" className={classes.button}>
+        <Button
+          type="button"
+          className={classes.button}
+          onClick={handleContactMe}
+        >
           Get in touch
         </Button>
       </div>

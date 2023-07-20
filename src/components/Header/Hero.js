@@ -16,7 +16,7 @@ const AnimateHero = ({ delay, children }) => {
   );
 };
 
-const Hero = () => {
+const Hero = ({ onNavItemClick }) => {
   return (
     <div className={classes.container}>
       <AnimateHero delay={1}>
@@ -37,10 +37,12 @@ const Hero = () => {
         </p>
       </AnimateHero>
       <AnimateHero delay={1.15}>
-        <Button type="button" className={classes.btn}>
-          Lets connect
-          <img src={Connect} alt="connect" />
-        </Button>
+        <a onClick={() => onNavItemClick("contact")} href="#contact">
+          <Button type="button" className={classes.btn}>
+            Lets connect
+            <img src={Connect} alt="connect" />
+          </Button>
+        </a>
       </AnimateHero>
     </div>
   );

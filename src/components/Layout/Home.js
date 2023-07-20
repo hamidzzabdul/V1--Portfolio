@@ -33,7 +33,7 @@ const Home = () => {
       <SideMenu />
       <MainNavigation onNavItemClick={scrollToSection} />
       <main className="main">
-        {isMobile ? <HeroMobile /> : <Hero />}
+        {isMobile ? <HeroMobile /> : <Hero onNavItemClick={scrollToSection} />}
         <About />
         <Experience />
         <Projects />
