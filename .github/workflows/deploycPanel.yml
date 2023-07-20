@@ -1,21 +1,27 @@
-name: Publish Website to CPanel
-on: 
-  push: 
+name: Publish Website to cPanel
+
+on:
+  push:
     branches:
-      -master
-jobs: 
+      - master
+
+jobs:
   FTP-Deploy-Action:
     name: FTP-Deploy-Action
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2.1.0
-      with: 
+      - name: Checkout code
+        uses: actions/checkout@v2.1.0
+        with:
           fetch-depth: 2
-    - name: FTP-Deploy-Actio
-      uses: SanKirkland/FTP-Deploy-Action@3.1.1
-      with: 
-        ftp-server: ${{secret.FTP_SERVER}}
-        ftp-username: ${{secret.FTP_USERNAME}}
-        ftp-password: ${{secret.FTP_PASSWORD}}
+
+      - name: FTP-Deploy-Action
+        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        with:
+          ftp-server: ${{ secrets.FTP_SERVER }}
+          ftp-username: ${{ secrets.FTP_USERNAME }}
+          ftp-password: ${{ secrets.FTP_PASSWORD }}
+
+
         
         
