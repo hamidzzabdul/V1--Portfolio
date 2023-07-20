@@ -7,7 +7,6 @@ const AnimateExperience = ({ children, inView }) => {
   const animation = useAnimation();
   useEffect(() => {
     if (inView) {
-      console.log("inView=", inView);
       animation.start({
         y: 0,
         opacity: 1,

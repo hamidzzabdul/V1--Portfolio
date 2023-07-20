@@ -38,7 +38,7 @@ const Projects = () => {
   });
 
   return (
-    <div className={classes.project}>
+    <div className={classes.project} id="work">
       <motion.div animate={animation} className={classes.title}>
         <h1 ref={ref}>
           <span>03.</span>Projects

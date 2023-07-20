@@ -14,17 +14,15 @@
   border-radius: 20px;
 }
 
-.sidemenu > a {
-  text-decoration: none;
-  color: white;
-}
-.sidemenu > a > svg {
+.sidemenu > a > .icon {
+  color: var(--font-color);
   margin: 10px 20px;
-  width: 20px;
+  font-size: 27px;
   cursor: pointer;
+  transition: all 300ms ease;
 }
 
-.sidemenu > a > svg:hover {
+.sidemenu > a > .icon:hover {
   stroke: var(--secondary-color);
 }
 .line {

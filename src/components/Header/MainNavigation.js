@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 import classes from "./MainNavigation.module.css";
 import Button from "../UI/Button";
@@ -22,7 +23,7 @@ const AnimatedListItem = ({ delay, children }) => {
   );
 };
 
-const MainNavigation = () => {
+const MainNavigation = ({ onNavItemClick }) => {
   const [isActive, setIsActive] = useState(false);
 
   const toggleSideBar = () => {
@@ -43,19 +44,30 @@ const MainNavigation = () => {
       <ul className={classes["nav-items"]}>
         <AnimatedListItem delay={0.2} className={classes.list}>
           <span>01.</span>
-          <p>About</p>
+          {/* <a onClick={() => onNavItemClick("about")} href="#about">
+            About
+          </a> */}
+          <Link to="about" smooth={true} duration={500}>
+            About
+          </Link>
         </AnimatedListItem>
         <AnimatedListItem delay={0.3} className={classes.list}>
           <span>02.</span>
-          <p>Experience</p>
+          <a onClick={() => onNavItemClick("experience")} href="#experience">
+            Experience
+          </a>
         </AnimatedListItem>
         <AnimatedListItem delay={0.4} className={classes.list}>
           <span>03.</span>
-          <p>Work</p>
+          <a onClick={() => onNavItemClick("work")} href="#work">
+            Work
+          </a>
         </AnimatedListItem>
         <AnimatedListItem delay={0.5} className={classes.list}>
           <span>04.</span>
-          <p>Contact</p>
+          <a onClick={() => onNavItemClick("contact")} href="#contact">
+            Contact
+          </a>
         </AnimatedListItem>
         <AnimatedListItem delay={0.6} className={classes.list}>
           <a href={Resume} download="myresume.pdf">

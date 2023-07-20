@@ -44,20 +44,22 @@
 
 .list {
   display: flex;
-  align-items: center;
-  gap: 0.3rem;
+  align-items: baseline;
+  gap: 0.5rem;
   cursor: pointer;
   font-size: 0.9rem;
 }
 
-.list > p {
+.list > a {
   transition: 300ms ease all;
   display: block;
   position: relative;
   padding-bottom: 3px;
+  text-decoration: none;
+  color: var(--font-color);
 }
 
-.list > p::after {
+.list > a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -68,7 +70,7 @@
   transition: width 0.4s ease;
 }
 
-.list:hover > p::after {
+.list:hover > a::after {
   width: 100%;
 }
 
@@ -76,7 +78,7 @@
   border-bottom: 1px solid var(--secondary-color);
 }
 
-.list:hover > p {
+.list:hover > a {
   color: var(--secondary-color);
 }
 

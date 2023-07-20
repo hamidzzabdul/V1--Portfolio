@@ -8,6 +8,7 @@ import Footer from "../footer/Footer";
 import SideMenu from "../UI/SideMenu";
 import { useStyleMediaQuery } from "../../hooks/useStyleMediaQuery";
 import HeroMobile from "../Header/HeroMobile";
+import { Element } from "react-scroll";
 
 const Home = () => {
   const { matches: isMobile } = useStyleMediaQuery({
@@ -16,13 +17,22 @@ const Home = () => {
     value: 767,
   });
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ top: section.offsetTop, behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <SideMenu />
-      <MainNavigation />
+      <MainNavigation onNavItemClick={scrollToSection} />
       <main className="main">
         {isMobile ? <HeroMobile /> : <Hero />}
-        <About />
+        <Element name="about" className="section">
+          <About />
+        </Element>
         <Experience />
         <Projects />
         <Connect />
