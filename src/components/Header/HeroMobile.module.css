@@ -24,10 +24,16 @@
 
 .social {
   display: flex;
+  flex-direction: column;
   gap: 1.5rem;
 }
 
-.social > a > img {
+.icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.icons > a > img {
   width: 35px;
 }
 
@@ -44,7 +50,7 @@
   .hero-mobile > p {
     font-size: 20px;
   }
-  .social > a > img {
+  .icons > a > img {
     width: 28px;
   }
 }
@@ -59,7 +65,7 @@
   .hero-mobile > p {
     font-size: 17px;
   }
-  .social > a > img {
+  .icons > a > img {
     width: 25px;
   }
 }
@@ -68,4 +74,18 @@
   .hero-mobile {
     padding: 1rem;
   }
+}
+
+.button {
+  font-size: 14px;
+  width: 150px;
+  padding: 0.7rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.button > img {
+  width: 20px;
+  height: 20px;
 }

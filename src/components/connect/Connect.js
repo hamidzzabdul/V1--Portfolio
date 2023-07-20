@@ -3,8 +3,6 @@ import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-import { useStyleMediaQuery } from "../../hooks/useStyleMediaQuery";
-
 import classes from "./Connect.module.css";
 import Button from "../UI/Button";
 
@@ -41,29 +39,23 @@ const Connect = () => {
     threshold: 0.3,
     triggerOnce: true,
   });
-  const { matches: isMobile } = useStyleMediaQuery({
-    mixOrMax: "max",
-    widthOrHeight: "width",
-    value: 700,
-  });
+
   return (
     <AnimateConnect inView={inView}>
-      {!isMobile && (
-        <div className={classes["lets-connect"]} ref={ref}>
-          <span className={classes.subtitle}>04. whats next</span>
-          <h2 className={classes.title}>Lets Connect</h2>
-          <div className={classes["connect-description"]}>
-            <p>
-              I'm excited to collaborate and explore new opportunities. If you
-              have any questions, project proposals, or just want to say hello,
-              feel free to reach out to me.
-            </p>
-          </div>
-          <Button type="button" className={classes.button}>
-            Lets Connect
-          </Button>
+      <div className={classes["lets-connect"]} ref={ref}>
+        <span className={classes.subtitle}>04. whats next</span>
+        <h2 className={classes.title}>Lets Connect</h2>
+        <div className={classes["connect-description"]}>
+          <p>
+            I'm excited to collaborate and explore new opportunities. If you
+            have any questions, project proposals, or just want to say hello,
+            feel free to reach out to me.
+          </p>
         </div>
-      )}
+        <Button type="button" className={classes.button}>
+          Get in touch
+        </Button>
+      </div>
     </AnimateConnect>
   );
 };

@@ -77,9 +77,9 @@ const About = () => {
 
         <AnimateAbout inView={inView}>
           <p>
-            I'm constantly driven to create innovative and engaging digital
+            I'm constantly driven to create engaging and innovative digital
             experiences. I thrive on challenging projects that push me to
-            explore new technologies and find elegant solutions.{" "}
+            explore new technologies and find elegant solutions.
           </p>
           <p>
             My goal is to not only write clean and efficient code but also

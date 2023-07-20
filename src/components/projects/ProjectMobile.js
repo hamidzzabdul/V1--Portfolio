@@ -1,5 +1,9 @@
 import classes from "./ProjectMobile.module.css";
 
+import Portfolio from "../../assets/v1-portfolio.png";
+import TechTreck from "../../assets/techtreck.png";
+import Jobster from "../../assets/jobster.png";
+
 const ProjectMobile = () => {
   return (
     <div className={classes.project}>
@@ -7,14 +11,14 @@ const ProjectMobile = () => {
         <h1 className={classes.title}>V1 Personal Portfolio</h1>
         <p>
           A portifolio site built with React, css and framer motions for
-          animations
+          animations.
         </p>
         <ul className={classes.languages}>
           <li>React</li>
           <li>CSS</li>
           <li>Render</li>
         </ul>
-        <img src="" alt="image3" />
+        <img src={Portfolio} alt="" />
       </div>
 
       <div className={classes["project-container"]}>
@@ -30,7 +34,7 @@ const ProjectMobile = () => {
           <li>Sanity io - CMS</li>
           <li>Render</li>
         </ul>
-        <img src="" alt="image2" />
+        <img src={TechTreck} alt="" />
       </div>
       <div className={classes["project-container"]}>
         <h1 className={classes.title}>Jobster</h1>
@@ -46,7 +50,7 @@ const ProjectMobile = () => {
           <li>Pug</li>
           <li>CSS</li>
         </ul>
-        <img src="" alt="image1" />
+        <img src={Jobster} alt="" />
       </div>
     </div>
   );
