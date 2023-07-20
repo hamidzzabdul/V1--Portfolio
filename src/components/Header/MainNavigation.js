@@ -7,6 +7,8 @@ import Button from "../UI/Button";
 import Logo from "../../assets/logo.png";
 import SideBar from "../UI/SideBar";
 
+import Resume from "../../assets/uploads/MyResume.pdf";
+
 const AnimatedListItem = ({ delay, children }) => {
   return (
     <motion.li
@@ -56,7 +58,9 @@ const MainNavigation = () => {
           <p>Contact</p>
         </AnimatedListItem>
         <AnimatedListItem delay={0.6} className={classes.list}>
-          <Button type="button">Resume</Button>
+          <a href={Resume} download="myresume.pdf">
+            <Button type="button">Resume</Button>
+          </a>
         </AnimatedListItem>
       </ul>
       <svg

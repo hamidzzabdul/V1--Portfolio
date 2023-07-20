@@ -13,14 +13,18 @@
   background-color: var(--primary-color);
   border-radius: 20px;
 }
-.sidemenu > svg {
+
+.sidemenu > a {
+  text-decoration: none;
+  color: white;
+}
+.sidemenu > a > svg {
   margin: 10px 20px;
   width: 20px;
-
   cursor: pointer;
 }
 
-.sidemenu > svg:hover {
+.sidemenu > a > svg:hover {
   stroke: var(--secondary-color);
 }
 .line {

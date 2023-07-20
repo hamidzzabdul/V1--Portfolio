@@ -48,7 +48,7 @@ const Experience = () => {
   });
 
   return (
-    <div className={classes["experiences-container"]}>
+    <div className={classes["experiences-container"]} id="experience">
       <AnimateExperience inView={inView}>
         <h1 className={classes.title} ref={expRef}>
           <span>02.</span>
