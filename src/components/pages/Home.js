@@ -12,7 +12,7 @@ const Home = () => {
     <>
       <SideMenu />
       <MainNavigation />
-      <main>
+      <main className="main">
         <Hero />
         <About />
         <Experience />

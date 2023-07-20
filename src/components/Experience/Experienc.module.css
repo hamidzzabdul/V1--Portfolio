@@ -1,8 +1,15 @@
 .experiences-container {
+  border: 1px solid red;
   width: 95%;
   margin: 30px auto;
   padding: 4rem 2rem;
 }
+/* 
+@media (max-width: 500px) {
+  .experiences-container {
+    width: 100%;
+  }
+} */
 
 .experiences-container > .animate > .title {
   color: #e6ecff;
