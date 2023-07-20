@@ -32,7 +32,7 @@ const AnimateProject = ({ delay, children, inView }) => {
 
 const Project = () => {
   const [ref, inView] = useInView({
-    threshold: 0.4,
+    threshold: 0.2,
     triggerOnce: true,
   });
 

@@ -4,6 +4,9 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
+import { useStyleMediaQuery } from "../../hooks/useStyleMediaQuery";
+import ProjectMobile from "./ProjectMobile";
+
 const Projects = () => {
   const [ref, inView] = useInView({
     threshold: 0.2,
@@ -28,17 +31,22 @@ const Projects = () => {
     }
   }, [inView, animation]);
 
+  const { matches: isMobile } = useStyleMediaQuery({
+    mixOrMax: "max",
+    widthOrHeight: "width",
+    value: 500,
+  });
+
   return (
     <div className={classes.project}>
       <motion.div animate={animation} className={classes.title}>
         <h1 ref={ref}>
-          <span>03.</span>Somethings i've built
+          <span>03.</span>Projects
         </h1>
-        <div className={classes.line}></div>
       </motion.div>
 
       <div className={classes["project-containers"]}>
-        <Project />
+        {isMobile ? <ProjectMobile /> : <Project />}
       </div>
     </div>
   );

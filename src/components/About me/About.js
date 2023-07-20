@@ -28,7 +28,12 @@ export const AnimateAbout = ({ children, inView }) => {
     }
   }, [inView, animation]);
   return (
-    <motion.div animate={animation} className={classes.animate}>
+    <motion.div
+      animate={animation}
+      className={`${classes.animate} ${
+        inView ? classes["about-animation"] : ""
+      }`}
+    >
       {children}
     </motion.div>
   );
@@ -36,7 +41,7 @@ export const AnimateAbout = ({ children, inView }) => {
 
 const About = () => {
   const [aboutRef, inView] = useInView({
-    threshold: 0.2,
+    threshold: 0.5,
     triggerOnce: true,
   });
 

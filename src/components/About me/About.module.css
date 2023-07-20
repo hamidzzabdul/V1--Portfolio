@@ -29,12 +29,14 @@
   padding-bottom: 10px;
   width: 90%;
 }
-/* 
-.skills {
-  margin: 0;
-  padding: 0;
-} */
 
+@media (max-width: 980px) {
+  .about-wrapper > .animate > .title {
+    margin-bottom: 1rem;
+  }
+}
+
+/* .skills { margin: 0; padding: 0; } */
 .skills-list {
   width: 50%;
   padding-top: 10px;
@@ -63,6 +65,36 @@
   margin-top: 50px;
 }
 
+@media (max-width: 700px) {
+  .about-us {
+    margin-top: 20px;
+  }
+
+  .animate > .title > span {
+    display: none;
+  }
+  .skills-list {
+    width: 70%;
+  }
+}
+
+@media (max-width: 450px) {
+  .about-us {
+    padding-left: 1rem;
+  }
+  .about-wrapper > .animate > .title {
+    font-size: 24px;
+    width: max-content;
+  }
+  .about-image {
+    display: none;
+  }
+
+  .skills-list {
+    width: 100%;
+  }
+}
+
 @media (max-width: 1000px) {
   .about-us {
     flex-wrap: wrap;
@@ -72,6 +104,22 @@
     width: 100%;
   }
   .about-image {
-    margin: 0 auto;
+    display: none;
+  }
+}
+
+.about-animation {
+  /* Define your animation styles here */
+  /* For example, you can set opacity and transform properties to control the animation */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional: Disable animation on mobile */
+@media (max-width: 700px) {
+  .about-animation {
+    /* You can set the animation properties to none or initial */
+    opacity: 1;
+    transform: initial;
   }
 }

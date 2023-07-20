@@ -71,8 +71,8 @@ const Experience = () => {
               in the IT department for 3 months.
             </p>
             <ul className={classes["skills-learned"]}>
-              <li>Networking</li>
               <li>System Administration</li>
+              <li>Networking</li>
               <li>Wordpress</li>
             </ul>
           </div>

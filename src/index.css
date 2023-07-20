@@ -35,6 +35,8 @@ main {
 @media (max-width: 700px) {
   main {
     width: 100%;
+    padding-top: 2rem;
+    gap: 0rem;
   }
 }
 
