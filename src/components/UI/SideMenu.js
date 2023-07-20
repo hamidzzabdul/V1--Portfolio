@@ -20,14 +20,14 @@ const SideMenu = () => {
         <AiOutlineGithub className={classes.icon} />
       </a>
       <a
-        href="https://github.com/hamidzzabdul"
+        href="https://linkedin.com/in/abdulhamid-abdirahim"
         target="_blank"
         rel="noreferrer"
       >
         <FaLinkedinIn className={classes.icon} />
       </a>
       <a
-        href="https://github.com/hamidzzabdul"
+        href="https://www.instagram.com/script_tags/"
         target="_blank"
         rel="noreferrer"
       >

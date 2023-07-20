@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-scroll";
 
 import classes from "./MainNavigation.module.css";
 import Button from "../UI/Button";
@@ -30,6 +29,17 @@ const MainNavigation = ({ onNavItemClick }) => {
     setIsActive(!isActive);
   };
 
+  const handleDownloadResume = () => {
+    // Assuming you have a direct link to your resume file
+    const link = document.createElement("a");
+    link.href = Resume; // Replace Resume with the correct path to your resume file
+    link.setAttribute("download", "MyResume.pdf");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    console.log("click");
+  };
+
   return (
     <div className={classes.nav}>
       <SideBar className={isActive ? "active" : ""} onClose={toggleSideBar} />
@@ -44,12 +54,9 @@ const MainNavigation = ({ onNavItemClick }) => {
       <ul className={classes["nav-items"]}>
         <AnimatedListItem delay={0.2} className={classes.list}>
           <span>01.</span>
-          {/* <a onClick={() => onNavItemClick("about")} href="#about">
+          <a onClick={() => onNavItemClick("about")} href="#about">
             About
-          </a> */}
-          <Link to="about" smooth={true} duration={500}>
-            About
-          </Link>
+          </a>
         </AnimatedListItem>
         <AnimatedListItem delay={0.3} className={classes.list}>
           <span>02.</span>
@@ -70,9 +77,9 @@ const MainNavigation = ({ onNavItemClick }) => {
           </a>
         </AnimatedListItem>
         <AnimatedListItem delay={0.6} className={classes.list}>
-          <a href={Resume} download="myresume.pdf">
-            <Button type="button">Resume</Button>
-          </a>
+          <Button type="button" onClick={handleDownloadResume}>
+            Resume
+          </Button>
         </AnimatedListItem>
       </ul>
       <svg

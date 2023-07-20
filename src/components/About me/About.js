@@ -67,65 +67,60 @@ const About = () => {
   }, [inView, imgAnimation]);
 
   return (
-    <section id="about">
-      <div className={classes["about-us"]}>
-        <div className={classes["about-wrapper"]}>
-          <AnimateAbout inView={inView}>
-            <h3 className={classes.title} ref={aboutRef}>
-              <span>01.</span>About me
-            </h3>
-          </AnimateAbout>
+    <div className={classes["about-us"]} id="about">
+      <div className={classes["about-wrapper"]}>
+        <AnimateAbout inView={inView}>
+          <h3 className={classes.title} ref={aboutRef}>
+            <span>01.</span>About me
+          </h3>
+        </AnimateAbout>
 
-          <AnimateAbout inView={inView}>
-            <p>
-              I'm constantly driven to create engaging and innovative digital
-              experiences. I thrive on challenging projects that push me to
-              explore new technologies and find elegant solutions.
-            </p>
-            <p>
-              My goal is to not only write clean and efficient code but also
-              ensure seamless user experiences through intuitive interfaces.
-              When I'm not coding, you can find me expanding my knowledge,
-              keeping up with industry trends, and enjoying a good cup of
-              coffee.
-            </p>
-          </AnimateAbout>
+        <AnimateAbout inView={inView}>
+          <p>
+            I'm constantly driven to create engaging and innovative digital
+            experiences. I thrive on challenging projects that push me to
+            explore new technologies and find elegant solutions.
+          </p>
+          <p>
+            My goal is to not only write clean and efficient code but also
+            ensure seamless user experiences through intuitive interfaces. When
+            I'm not coding, you can find me expanding my knowledge, keeping up
+            with industry trends, and enjoying a good cup of coffee.
+          </p>
+        </AnimateAbout>
 
-          <AnimateAbout dela={0.9} inView={inView}>
-            <div className={classes.skills}>
-              <p>
-                Here are a few technologies I’ve been working with recently:
-              </p>
-              <ul className={classes["skills-list"]}>
-                <li>
-                  <img src={List} alt="" />
-                  Javascript
-                </li>
-                <li>
-                  <img src={List} alt="" />
-                  React
-                </li>
-                <li>
-                  <img src={List} alt="" />
-                  Node.js
-                </li>
-                <li>
-                  <img src={List} alt="" />
-                  Express-Js
-                </li>
-                <li>
-                  <img src={List} alt="" />
-                  MongoDB
-                </li>
-              </ul>
-            </div>
-          </AnimateAbout>
-        </div>
-        <motion.div className={classes["about-image"]} animate={imgAnimation}>
-          <img src={AboutImage} alt="aboutus" />
-        </motion.div>
+        <AnimateAbout dela={0.9} inView={inView}>
+          <div className={classes.skills}>
+            <p>Here are a few technologies I’ve been working with recently:</p>
+            <ul className={classes["skills-list"]}>
+              <li>
+                <img src={List} alt="" />
+                Javascript
+              </li>
+              <li>
+                <img src={List} alt="" />
+                React
+              </li>
+              <li>
+                <img src={List} alt="" />
+                Node.js
+              </li>
+              <li>
+                <img src={List} alt="" />
+                Express-Js
+              </li>
+              <li>
+                <img src={List} alt="" />
+                MongoDB
+              </li>
+            </ul>
+          </div>
+        </AnimateAbout>
       </div>
-    </section>
+      <motion.div className={classes["about-image"]} animate={imgAnimation}>
+        <img src={AboutImage} alt="aboutus" />
+      </motion.div>
+    </div>
   );
 };
 
