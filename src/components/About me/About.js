@@ -18,6 +18,7 @@ export const AnimateAbout = ({ children, inView }) => {
         transition: {
           ease: "easeIn",
           duration: 0.5,
+          delay: 0.5,
         },
       });
     } else {
@@ -117,7 +118,11 @@ const About = () => {
           </div>
         </AnimateAbout>
       </div>
-      <motion.div className={classes["about-image"]} animate={imgAnimation}>
+      <motion.div
+        className={classes["about-image"]}
+        animate={imgAnimation}
+        transition={{ delay: 0.6 }}
+      >
         <img src={AboutImage} alt="aboutus" />
       </motion.div>
     </div>
