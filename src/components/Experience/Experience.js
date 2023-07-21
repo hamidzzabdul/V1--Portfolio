@@ -105,8 +105,9 @@ const Experience = () => {
             <p className={classes.department}>IT And Digital Martketer</p>
 
             <p className={classes.description}>
-              Worked in the IT department in Umma University Kajiado interning
-              in the IT department for 3 months.
+              Currently working as an IT and Digital Marketer at Vitol Agency,
+              managing technology infrastructure and driving digital marketing
+              strategies.
             </p>
             <ul className={classes["skills-learned"]}>
               <li>Networking</li>

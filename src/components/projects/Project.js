@@ -10,14 +10,12 @@ const AnimateProject = ({ delay, children, inView }) => {
   useEffect(() => {
     if (inView) {
       animation.start({
-        y: 0,
         opacity: 1,
-        transition: { ease: "easeIn", duration: 0.5, delay: delay },
+        transition: { ease: "easeIn", duration: 0.7, delay: delay },
       });
     }
     if (!inView) {
       animation.start({
-        y: 55,
         opacity: 0,
         // transition: { ease: "easeIn", duration: 0.5, delay: delay },
       });
@@ -66,10 +64,10 @@ const Project = () => {
             </p>
           </div>
           <ul className={classes.languages}>
-            <li>Pug</li>
-            <li>js</li>
             <li>Node js</li>
             <li>Express-js</li>
+            <li>js</li>
+            <li>Pug</li>
           </ul>
         </div>
       </AnimateProject>
@@ -131,10 +129,9 @@ const Project = () => {
             </p>
           </div>
           <ul className={classes.languages}>
-            <li>Node js</li>
-            <li>Express-js</li>
-            <li>Js</li>
-            <li>Pug</li>
+            <li>React js</li>
+            <li>framer motion</li>
+            <li>CSS</li>
           </ul>
         </div>
       </AnimateProject>

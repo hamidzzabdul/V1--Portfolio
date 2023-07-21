@@ -16,14 +16,16 @@
 
 .sidemenu > a > .icon {
   color: var(--font-color);
-  margin: 10px 20px;
+  margin: 5px 20px;
   font-size: 27px;
   cursor: pointer;
-  transition: all 300ms ease;
+  transition: all 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
 }
 
 .sidemenu > a > .icon:hover {
   stroke: var(--secondary-color);
+  transform: scale(1.1);
 }
 .line {
   width: 2px;

@@ -23,17 +23,22 @@ const Hero = ({ onNavItemClick }) => {
         <p className={classes.subheading}>Hy my name is..</p>
       </AnimateHero>
       <AnimateHero delay={1.04}>
-        <h1>Adulhamid Abdirahim </h1>
+        <h1>
+          Adulhamid Abdirahim<span>.</span>
+        </h1>
       </AnimateHero>
       <AnimateHero delay={1.08}>
-        <h3>I build things</h3>
+        <h3>
+          I build things for the Web<span>.</span>
+        </h3>
       </AnimateHero>
       <AnimateHero delay={1.1}>
         <p className={classes.intro}>
           I'm Abdulhamid Abdirahim Mohamed, a passionate MERN Stack Developer. I
           specialize in crafting remarkable web applications with a focus on
-          user experience, accessibility, and cutting-edge solutions. My goal is
-          to deliver exceptional web experiences that make a lasting impact.
+          user experience, accessibility, and{" "}
+          <span>cutting-edge solutions.</span> My goal is to deliver exceptional
+          web experiences that make a lasting impact.
         </p>
       </AnimateHero>
       <AnimateHero delay={1.15}>

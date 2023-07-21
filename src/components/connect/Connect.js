@@ -16,6 +16,7 @@ const AnimateConnect = ({ children, inView }) => {
         transition: {
           ease: "easeIn",
           duration: 0.5,
+          delay: 0.2,
         },
       });
     }
