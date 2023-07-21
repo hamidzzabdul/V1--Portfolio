@@ -18,6 +18,7 @@
   letter-spacing: 1px;
   line-height: 1.1;
   font-weight: 800;
+  color: var(--Primary-font-color);
 }
 
 .connect-description {

@@ -1,6 +1,7 @@
 .about-us {
   margin-top: 30px;
   display: flex;
+  gap: 0.5rem;
   padding: 3rem 1rem;
 }
 
@@ -12,12 +13,18 @@
 }
 
 .about-wrapper > .animate > .title {
-  color: #ccd6f6;
+  color: var(--Primary-font-color);
   font-size: 27px;
   font-weight: 600;
   display: flex;
   gap: 1rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 500px) {
+  .about-wrapper > .animate > .title {
+    font-size: 14px;
+  }
 }
 
 .animate > .title > span {
@@ -27,7 +34,8 @@
 .animate > p {
   line-height: 1.8rem;
   padding-bottom: 10px;
-  /* width: 90%; */
+  font-size: 19px;
+  width: 88%;
 }
 
 @media (max-width: 980px) {
@@ -53,7 +61,7 @@
 }
 
 .about-image {
-  width: 400px;
+  width: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,7 +69,7 @@
 
 .about-image > img {
   width: 100%;
-  height: 400px;
+  height: 350px;
   margin-top: 50px;
 }
 

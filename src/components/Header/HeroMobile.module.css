@@ -4,7 +4,7 @@
 
 .hero-mobile > h1 {
   font-size: 34px;
-  color: #d4deff;
+  color: var(--Primary-font-color);
   margin-bottom: 10px;
 }
 
@@ -74,18 +74,4 @@
   .hero-mobile {
     padding: 1rem;
   }
-}
-
-.button {
-  font-size: 14px;
-  width: 150px;
-  padding: 0.7rem;
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-}
-
-.button > img {
-  width: 20px;
-  height: 20px;
 }

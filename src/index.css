@@ -8,6 +8,7 @@
 :root {
   --body-primary: #0a192f;
   --secondary-color: #50ffd5;
+  --Primary-font-color: #c9d0e7;
   --font-color: #aab6d8;
 
   --primary-font: "Poppins", sans-serif;
@@ -39,7 +40,6 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  border: 1px solid red;
 }
 @media (max-width: 700px) {
   main {

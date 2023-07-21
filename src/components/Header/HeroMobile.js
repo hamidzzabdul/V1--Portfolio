@@ -1,9 +1,7 @@
 import classes from "./HeroMobile.module.css";
-import Connect from "../../assets/connect.svg";
 import Instagram from "../../assets/instagram.svg";
 import LinkedIn from "../../assets/linkedin-in.svg";
 import Github from "../../assets/git.svg";
-import Button from "../UI/Button";
 
 const HeroMobile = () => {
   return (
@@ -15,11 +13,6 @@ const HeroMobile = () => {
         web
       </p>
       <div className={classes.social}>
-        <Button type="button" className={classes.button}>
-          Lets Connect
-          <img src={Connect} alt="connect" />
-        </Button>
-
         <div className={classes.icons}>
           <a
             href="https://github.com/hamidzzabdul"
