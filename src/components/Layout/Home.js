@@ -18,13 +18,8 @@ const Home = () => {
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
-    const navbarHeight = 4 * 16;
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
-
-      // Adjust the scroll position to account for the fixed nav bar
-      const scrolledY = window.scrollY;
-      window.scroll(0, scrolledY - navbarHeight);
     }
   };
 
