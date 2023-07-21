@@ -24,15 +24,14 @@
 }
 
 .animate > h1 {
-  font-size: 70px;
+  font-size: 50px;
   color: #d4deff;
 }
 
 .animate > h3 {
   margin: 0;
-  font-size: 65px;
+  font-size: 50px;
   color: var(--slate);
-  margin-bottom: 15px;
   width: 100%;
 }
 
@@ -54,9 +53,10 @@
 }
 
 .intro {
+  font-size: 15px;
   line-height: 1.8rem;
   max-width: 540px;
-  margin: 40px 0;
+  margin: 20px 0;
 }
 
 .intro > span {
