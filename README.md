@@ -1,6 +1,6 @@
 # My Portfolio
 
-![Portfolio Preview](portfolio_preview.png)
+![Portfolio Preview](src/assets/v1-portfolio.png)
 
 ## Introduction
 
