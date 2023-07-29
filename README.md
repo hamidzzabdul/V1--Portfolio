@@ -40,12 +40,9 @@ Feel free to explore the different sections of the repository to learn more abou
 
 ```bash
 git clone https://github.com/YourUsername/YourPortfolio.git
-```
+``` 
 
-Then run 
-  *npm install 
-
-5. Once the repository is cloned, navigate to the project directory and start exploring!
+5. Once the repository is cloned, run ```npm install``` in the project directory
 
 ## Contribution
 
