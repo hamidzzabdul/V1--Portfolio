@@ -4,12 +4,12 @@
 
 ## Introduction
 
-Welcome to my portfolio repository! This repository showcases my skills, projects, and experiences as a [Your Profession] and serves as a hub for potential employers, collaborators, or anyone interested in learning more about my work.
+Welcome to my portfolio repository! This repository showcases my skills, projects, and experiences as a Software Developer and serves as a hub for potential employers, collaborators, or anyone interested in learning more about my work.
 
 ## Table of Contents
 
 - [About Me](#about-me)
-- [Skills](#skills)
+- [Experience](#experience)
 - [Projects](#projects)
 - [Contact](#contact)
 
@@ -17,9 +17,9 @@ Welcome to my portfolio repository! This repository showcases my skills, project
 
 In this section, I provide a brief overview of who I am, my background, and what drives me in my professional journey.
 
-## Skills
+## Experience
 
-Here, I list my technical skills and areas of expertise, highlighting the technologies I'm proficient in.
+Here, I detail my professional experience, highlighting the roles I've held, the projects I've worked on, and the skills I've gained.
 
 ## Projects
 
@@ -41,6 +41,9 @@ Feel free to explore the different sections of the repository to learn more abou
 ```bash
 git clone https://github.com/YourUsername/YourPortfolio.git
 ```
+
+Then run 
+  *npm install 
 
 5. Once the repository is cloned, navigate to the project directory and start exploring!
 
